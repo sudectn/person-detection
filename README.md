@@ -49,8 +49,8 @@ For the `extraction` module:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/person-detection-system.git
-   cd person-detection-system
+   git clone https://github.com/sudectn/person-detection.git
+   cd person-detection
    ```
 
 3. Install the required Python packages:
