@@ -48,32 +48,35 @@ For the `extraction` module:
 
 1. Clone the repository:
 
-   `git clone https://github.com/yourusername/person-detection-system.git`
-   `cd person-detection-system`
+   ```bash
+   git clone https://github.com/yourusername/person-detection-system.git
+   cd person-detection-system
+   ```
 
-2. Install the required Python packages:
+3. Install the required Python packages:
 
-    `pip install -r requirements.txt`
+    ```
+    pip install -r requirements.txt
+    ```
 
   If using the extraction module, install additional dependencies:
 
-    `pip install -r extraction/requirements.txt`
+    ```
+    pip install -r extraction/requirements.txt
+    ```
  
 ## Environment Configuration
 
 Create a .env file in the root and the extraction directories with the following content:
 
-  `CAMERA_USERNAME=your_username`
-  
-  `CAMERA_PASSWORD=your_password`
-  
-  `CAMERA_IP=your_camera_ip`
-  
-  `CAMERA_PORT=554  # Default RTSP port`
-  
-  `CAMERA_PATH=your_camera_path`
-  
-  `ROBOFLOW_API_KEY=your_roboflow_api_key`
+```
+  CAMERA_USERNAME=your_username
+  CAMERA_PASSWORD=your_password
+  CAMERA_IP=your_camera_ip
+  CAMERA_PORT=554  # Default RTSP port
+  CAMERA_PATH=your_camera_path
+  ROBOFLOW_API_KEY=your_roboflow_api_key
+```
 
 The ROBOFLOW_API_KEY is required to access the detection model.
 
@@ -87,7 +90,9 @@ The system is divided into two main components: `extract_frames.py` and `detect.
 
  In one terminal, run:
 
-  `python extract_frames.py`
+  ```
+  python extract_frames.py
+  ```
 
  This will start capturing frames from the camera and save them to the `image_frames` directory.
 
@@ -95,7 +100,9 @@ The system is divided into two main components: `extract_frames.py` and `detect.
 
  In another terminal, run:
 
-  `python detect.py`
+  ```
+  python detect.py
+  ```
 
  This will process the captured frames, detect the number of people, and update the live JSON files and daily reports.
 
