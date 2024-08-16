@@ -60,11 +60,9 @@ For the `extraction` module:
     ```
 
   If using the extraction module, install additional dependencies:
-
-    ```
+    
     pip install -r extraction/requirements.txt
-    ```
- 
+    
 ## Environment Configuration
 
 Create a .env file in the root and the extraction directories with the following content:
