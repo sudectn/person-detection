@@ -63,11 +63,16 @@ For the `extraction` module:
 
 Create a .env file in the root and the extraction directories with the following content:
 
-  `CAMERA_USERNAME=your_username`\n
-  `CAMERA_PASSWORD=your_password`\n
-  `CAMERA_IP=your_camera_ip`\n
-  `CAMERA_PORT=554  # Default RTSP port`\n
-  `CAMERA_PATH=your_camera_path`\n
+  `CAMERA_USERNAME=your_username`
+  
+  `CAMERA_PASSWORD=your_password`
+  
+  `CAMERA_IP=your_camera_ip`
+  
+  `CAMERA_PORT=554  # Default RTSP port`
+  
+  `CAMERA_PATH=your_camera_path`
+  
   `ROBOFLOW_API_KEY=your_roboflow_api_key`
 
 The ROBOFLOW_API_KEY is required to access the detection model.
